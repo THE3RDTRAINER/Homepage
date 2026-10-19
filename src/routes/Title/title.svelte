@@ -15,5 +15,6 @@
     <nav class="mt-8 flex flex-wrap justify-center gap-8">
         <Subtitle text="Projects" link="/Projects" />
         <Subtitle text="Github" link="https://github.com/THE3RDTRAINER" openNewTab />
+        <Subtitle text="LinkedIn" link="https://www.linkedin.com/in/philiptrainer/" openNewTab />
     </nav>
 </div>

@@ -10,6 +10,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="min-h-screen bg-[url('/galaxy.jpg')] bg-cover bg-center bg-no-repeat">
+<div class="min-h-screen bg-[url('/sky.jpg')] bg-cover bg-center bg-no-repeat">
 	{@render children()}
 </div>
