@@ -17,8 +17,8 @@
 <a
     class="group relative block aspect-[4/3] overflow-hidden rounded-xl bg-slate-950 text-white shadow-xl outline-none focus-visible:ring-4 focus-visible:ring-cyan-300"
     href={projectLink}
-    target="_blank"
-    rel="noopener noreferrer"
+    target={projectLink.startsWith('http') ? '_blank' : undefined}
+    rel={projectLink.startsWith('http') ? 'noopener noreferrer' : undefined}
 >
     <img
         class="absolute inset-0 h-full w-full object-cover transition duration-500 ease-in-out group-hover:scale-105 group-hover:opacity-0 group-focus-visible:scale-105 group-focus-visible:opacity-0 motion-reduce:transition-none"

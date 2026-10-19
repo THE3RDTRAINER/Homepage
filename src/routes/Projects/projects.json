@@ -1,41 +1,41 @@
 [{
-  "projectName": "Theifs Gambit",
+  "projectName": "Thief's Gambit",
   "projectDescription": "Thief's Gambit is a Western-style VR shooter and puzzle game!",
-  "projectLink": "https://philiptraineriii.wixsite.com/philiptrainer/copy-of-skadegamutc",
+  "projectLink": "/Projects/thiefs-gambit",
   "projectImage": "/images/projects/ThiefsGambit.png",
   "tags": ["VR", "Unity", "Full Game", "Puzzle", "Shooter"]
 },
 {
   "projectName": "Space Cowboys",
   "projectDescription": "A VR Prototype for the Vive Focus. Shooting gallery with a western theme.",
-  "projectLink": "https://philiptraineriii.wixsite.com/philiptrainer/blank-1",
+  "projectLink": "/Projects/space-cowboys",
   "projectImage": "/images/projects/SpaceCowboys.png",
   "tags": ["VR", "Unity", "Prototype", "Shooter"]
 },
 {
   "projectName": "Paw-Anormal Activity",
   "projectDescription": "An award winning Global Game Jam entyr. In Paw-Anormal Activity players take on the role of a dog protecting their sleeping owner from “possessed” objects during a stormy night. Bark to defeat monsters but don’t bark too much or your owner will wake up.",
-  "projectLink": "http://philtrainer.com/Paw-AnormalActivity.html",
-  "projectImage": "/images/projects/Pawnormal.png",
+  "projectLink": "/Projects/paw-anormal-activity",
+  "projectImage": "/images/projects/pawnormal.png",
   "tags": ["Unreal 4", "Global Game Jam"]
 },
 {
   "projectName": "Skadegamutc",
   "projectDescription": "A 2D platformer focused on Native American Culture",
-  "projectLink": "http://philtrainer.com/Skadegamutc.html",
+  "projectLink": "/Projects/skadegamutc",
   "projectImage": "/images/projects/Skadegamutc.png",
     "tags": ["Game", "2D Platformer", "Unity"]
 },
 {
   "projectName": "Wasteland",
   "projectDescription": "Fully modeled, UVed, and textured scene made in Maya. Composited in Unreal 4",
-  "projectLink": "http://philtrainer.com/Wasteland.html",
+  "projectLink": "/Projects/wasteland",
   "projectImage": "/images/projects/wasteland.png",
   "tags": ["Art", "3D Modeling", "Texturing", "Unreal 4", "Maya"]
 },
 {
-  "projectName": "ProceduralPlanet",
+  "projectName": "Procedural Planet",
   "projectDescription": "A script made in Unreal 4 in Blueprint for a game focused on a ship rotating around the planet.",
-  "projectLink": "https://philiptraineriii.wixsite.com/philiptrainer/blank",
+  "projectLink": "/Projects/procedural-planet",
   "projectImage": "/images/projects/ProceduralPlanet.png"
 }]
