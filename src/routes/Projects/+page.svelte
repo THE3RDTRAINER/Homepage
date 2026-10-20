@@ -13,9 +13,10 @@
 
   const projects: Project[] = projectData;
 </script>
-<head>
-    <title>Projects - Philip Trainer</title>
-</head>
+
+<svelte:head>
+  <title>Projects - Philip Trainer</title>
+</svelte:head>
 
 <main class="mx-auto min-h-screen max-w-7xl p-6 sm:p-10">
 <a
