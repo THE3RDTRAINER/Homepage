@@ -1,7 +1,8 @@
 <script lang="ts">
+  import type { ProjectDetailData } from '#lib/project-media.js';
   import ProjectDetail from '../project-detail.svelte';
 
-  const project = {
+  const project: ProjectDetailData = {
     name: 'Wasteland',
     category: 'Environment Art',
     summary: 'A game-art environment modeled, textured, and assembled from individually created assets.',
@@ -11,8 +12,11 @@
       'Completed as an individual environment-art project for a Game Art class.',
     role:
       'Environment Artist: modeled, UV mapped, textured, and placed all of the assets shown in the scene.',
-    image: '/images/projects/wasteland.png',
-    imageAlt: 'Wasteland environment art project',
+    media: {
+      type: 'image',
+      src: '/images/projects/wasteland.png',
+      alt: 'Wasteland environment art project'
+    },
     tools: ['Maya', 'Headus', 'Substance Painter', 'Photoshop', 'Unreal Engine 4'],
     sections: [
       {

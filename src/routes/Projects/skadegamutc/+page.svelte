@@ -1,7 +1,8 @@
 <script lang="ts">
+  import type { ProjectDetailData } from '#lib/project-media.js';
   import ProjectDetail from '../project-detail.svelte';
 
-  const project = {
+  const project: ProjectDetailData = {
     name: 'Skadegamutc',
     category: '2D Platformer',
     summary: 'A Unity platformer about a hunter racing back to his village while pursued by a ghost witch.',
@@ -11,8 +12,11 @@
       'Built during a 10-week course focused on making 2D games in Unity. This was the developer’s first 2D game made with Unity.',
     role:
       'Programmer: implemented the game’s programming, while a teammate created the artwork.',
-    image: '/images/projects/Skadegamutc.png',
-    imageAlt: 'Skadegamutc project artwork',
+    media: {
+      type: 'image',
+      src: '/images/projects/Skadegamutc.png',
+      alt: 'Skadegamutc project artwork'
+    },
     tools: ['Unity 2017', '2D Platformer', 'Gameplay Programming'],
     sections: [
       {

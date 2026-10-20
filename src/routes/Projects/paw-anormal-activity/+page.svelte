@@ -1,7 +1,8 @@
 <script lang="ts">
+  import type { ProjectDetailData } from '#lib/project-media.js';
   import ProjectDetail from '../project-detail.svelte';
 
-  const project = {
+  const project: ProjectDetailData = {
     name: 'Paw-Anormal Activity',
     category: 'Global Game Jam 2017',
     summary: 'Protect a sleeping owner from possessed objects as a barking dog.',
@@ -11,8 +12,11 @@
       'Created for Global Game Jam 2017 in Unreal Engine 4 as a team game project. The project received an Honorable Mention at SCAD and later won awards at Guild Hall’s startup conference.',
     role:
       'Lead Programmer: coordinated with the other leads and programmers, helped keep features and tasks on schedule, implemented the navigation mesh, debugged issues, and contributed to level design.',
-    image: '/images/projects/pawnormal.png',
-    imageAlt: 'Paw-Anormal Activity gameplay screenshot',
+    media: {
+      type: 'image',
+      src: '/images/projects/pawnormal.png',
+      alt: 'Paw-Anormal Activity gameplay screenshot'
+    },
     tools: ['Unreal Engine 4', 'Global Game Jam', 'NavMesh', 'Level Design'],
     sections: [
       {

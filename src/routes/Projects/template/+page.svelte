@@ -1,4 +1,27 @@
 <script lang="ts">
+  import type { ProjectMedia } from '#lib/project-media.js';
+
+  type ProjectHighlight = {
+    title: string;
+    description: string;
+    media?: ProjectMedia;
+  };
+
+  const highlights: ProjectHighlight[] = [
+    {
+      title: 'Feature or System',
+      description:
+        'Explain an interesting feature, how it works, and your contribution to implementing it.',
+      media: { type: 'image', src: '', alt: 'Describe the image' }
+    },
+    {
+      title: 'Video Demo',
+      description:
+        'Describe what this video shows. Use a direct video file URL, such as an MP4, not a YouTube page URL.',
+      media: { type: 'video', src: '', title: 'Describe the video content' }
+    }
+  ];
+
   const project = {
     name: 'Project Name',
     overview:
@@ -9,20 +32,7 @@
     tools: ['Tool or technology', 'Another tool'],
     tags: ['Add', 'Project', 'Tags'],
     link: '',
-    highlights: [
-      {
-        title: 'Feature or System',
-        description:
-          'Explain an interesting feature, how it works, and your contribution to implementing it.',
-        image: ''
-      },
-      {
-        title: 'Challenges',
-        description:
-          'Describe a significant technical or creative challenge, the approach you took, and the result.',
-        image: ''
-      }
-    ]
+    highlights
   };
 </script>
 
@@ -61,12 +71,33 @@
           <p class="leading-relaxed text-white/90">{highlight.description}</p>
         </div>
 
-        {#if highlight.image}
+        {#if highlight.media?.type === 'image' && highlight.media.src}
           <img
             class="h-64 w-full rounded-xl object-cover shadow-lg md:h-80"
-            src={highlight.image}
-            alt={`${project.name}: ${highlight.title}`}
+            src={highlight.media.src}
+            alt={highlight.media.alt}
           />
+        {:else if highlight.media?.type === 'video' && highlight.media.src}
+          <!-- svelte-ignore a11y_media_has_caption -->
+          <video
+            class="h-64 w-full rounded-xl object-cover shadow-lg md:h-80"
+            src={highlight.media.src}
+            poster={highlight.media.poster}
+            aria-label={highlight.media.title}
+            controls
+            playsinline
+            preload="metadata"
+          >
+            {#if highlight.media.captions}
+              <track
+                kind="captions"
+                src={highlight.media.captions.src}
+                srclang={highlight.media.captions.lang}
+                label={highlight.media.captions.label}
+                default
+              />
+            {/if}
+          </video>
         {:else}
           <div class="grid h-64 place-items-center rounded-xl border border-white/20 bg-black/30 text-center text-white/60 md:h-80">
             Add an image path for this section

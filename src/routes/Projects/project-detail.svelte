@@ -1,31 +1,7 @@
 <script lang="ts">
-  type ProjectSection = {
-    title: string;
-    description: string;
-    image?: string;
-    imageAlt?: string;
-  };
+  import type { ProjectDetailData } from '#lib/project-media.js';
 
-  type ProjectLink = {
-    label: string;
-    href: string;
-  };
-
-  type ProjectDetail = {
-    name: string;
-    category: string;
-    summary: string;
-    overview: string;
-    context: string;
-    role: string;
-    image: string;
-    imageAlt: string;
-    tools: string[];
-    sections: ProjectSection[];
-    links: ProjectLink[];
-  };
-
-  let { project }: { project: ProjectDetail } = $props();
+  let { project }: { project: ProjectDetailData } = $props();
 </script>
 
 <svelte:head>
@@ -48,11 +24,34 @@
   </header>
 
   <figure class="mb-12">
-    <img
-      class="max-h-[38rem] w-full rounded-2xl object-cover shadow-2xl"
-      src={project.image}
-      alt={project.imageAlt}
-    />
+    {#if project.media.type === 'image'}
+      <img
+        class="max-h-[38rem] w-full rounded-2xl object-cover shadow-2xl"
+        src={project.media.src}
+        alt={project.media.alt}
+      />
+    {:else}
+      <!-- svelte-ignore a11y_media_has_caption -->
+      <video
+        class="max-h-[38rem] w-full rounded-2xl object-cover shadow-2xl"
+        src={project.media.src}
+        poster={project.media.poster}
+        aria-label={project.media.title}
+        controls
+        playsinline
+        preload="metadata"
+      >
+        {#if project.media.captions}
+          <track
+            kind="captions"
+            src={project.media.captions.src}
+            srclang={project.media.captions.lang}
+            label={project.media.captions.label}
+            default
+          />
+        {/if}
+      </video>
+    {/if}
   </figure>
 
   <section class="mb-12 grid gap-8 md:grid-cols-2" aria-label="Project overview and role">
@@ -75,12 +74,33 @@
           <h2 class="mb-4 text-2xl font-bold">{section.title}</h2>
           <p class="leading-relaxed text-white/90">{section.description}</p>
         </div>
-        {#if section.image}
+        {#if section.media?.type === 'image'}
           <img
             class="h-64 w-full rounded-xl object-cover shadow-lg md:h-80"
-            src={section.image}
-            alt={section.imageAlt ?? `${project.name}: ${section.title}`}
+            src={section.media.src}
+            alt={section.media.alt}
           />
+        {:else if section.media?.type === 'video'}
+          <!-- svelte-ignore a11y_media_has_caption -->
+          <video
+            class="h-64 w-full rounded-xl object-cover shadow-lg md:h-80"
+            src={section.media.src}
+            poster={section.media.poster}
+            aria-label={section.media.title}
+            controls
+            playsinline
+            preload="metadata"
+          >
+            {#if section.media.captions}
+              <track
+                kind="captions"
+                src={section.media.captions.src}
+                srclang={section.media.captions.lang}
+                label={section.media.captions.label}
+                default
+              />
+            {/if}
+          </video>
         {/if}
       </article>
     {/each}
