@@ -23,7 +23,7 @@
         title: 'Spline-Based Orbit',
         media: {
           type: 'video',
-          src: '/movies/ProceduralPlanet.mp4',
+          src: 'https://firebasestorage.googleapis.com/v0/b/homepage-the3rdtrainer.firebasestorage.app/o/ProceduralPlanet.mp4?alt=media&token=8454d65a-aa66-4d76-9427-fc184e255b41',
           title: 'Full Demo for Space Cowboys'
         },
         description:

@@ -15,7 +15,7 @@
     media: {
       type: 'image',
       src: '/images/projects/ThiefsGambit.png',
-      alt: 'A richly decorated interior environment from Thief’s Gambit'
+      alt: "A richly decorated interior environment from Thief's Gambit"
     },
     tools: ['VR', 'Unity', 'Puzzle', 'Shooter'],
     sections: [
@@ -26,7 +26,7 @@
         media: {
           type: 'image',
           src: '/images/projects/ThiefsGambit-ArtBible.png',
-          alt: 'A collection of game props, including a revolver, for Thief’s Gambit'
+          alt: "A collection of game props, including a revolver, for Thief’s Gambit"
         }
       },
       {
@@ -36,7 +36,7 @@
         media: {
           type: 'image',
           src: '/images/projects/ThiefsGambit-Environment.png',
-          alt: 'A detailed interior environment from Thief’s Gambit'
+          alt: "A detailed interior environment from Thief's Gambit"
         }
       }
     ],
@@ -47,7 +47,7 @@
       },
       {
         label: "View the Trailer",
-        href: "/movies/ThiefsGambitFinalTrailer.mp4"
+        href: "https://firebasestorage.googleapis.com/v0/b/homepage-the3rdtrainer.firebasestorage.app/o/ThiefsGambitFinalTrailer.mp4?alt=media&token=00b885b4-9625-48e2-b247-0594dea16fb4"
         // href: 'https://www.youtube.com/watch?v=HGDt4luu9oU'
       },
       {

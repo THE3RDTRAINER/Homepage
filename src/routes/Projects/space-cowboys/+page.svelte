@@ -25,7 +25,7 @@
           'Developed enemies that move around the environment, fire at the player, and evade incoming shots. Raycasts check whether a target point is reachable, preventing enemies from walking through obstacles or gathering in the same space. The headset’s six-degree-of-freedom tracking gives the player room to dodge incoming fire.',
         media: {
           type: 'video',
-          src: '/movies/spaceCowboysDemoAI.mp4',
+          src: 'https://firebasestorage.googleapis.com/v0/b/homepage-the3rdtrainer.firebasestorage.app/o/spaceCowboysDemoAI.mp4?alt=media&token=ce933bdc-823e-41e4-9ed9-db8d60bf220f',
           title: 'Demo of Space Cowboys enemy AI showing enemies moving around'
         }
       },
@@ -33,7 +33,7 @@
         title: 'Gameplay & Presentation',
         media: {
           type: 'video',
-          src: '/movies/spaceCowboysFullDemo.mp4',
+          src: 'https://firebasestorage.googleapis.com/v0/b/homepage-the3rdtrainer.firebasestorage.app/o/spaceCowboysFullDemo.mp4?alt=media&token=ea267f46-5efc-4b79-9a8c-3376fec51f27',
           title: 'Full Demo for Space Cowboys'
         },
         description:
