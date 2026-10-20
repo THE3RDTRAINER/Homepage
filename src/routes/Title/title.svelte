@@ -1,6 +1,7 @@
 <script>
     import Titles from './RevolingTitles/rotating-title.svelte'
     import Subtitle from './subtitle.svelte'
+    import "../layout.css"
 </script>
 
 <div class="flex min-h-screen flex-col items-center justify-center">

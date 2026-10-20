@@ -1,41 +1,77 @@
-[{
-  "projectName": "Thief's Gambit",
-  "projectDescription": "Thief's Gambit is a Western-style VR shooter and puzzle game!",
-  "projectLink": "/Projects/thiefs-gambit",
-  "projectImage": "/images/projects/ThiefsGambit.png",
-  "tags": ["VR", "Unity", "Full Game", "Puzzle", "Shooter"]
-},
-{
-  "projectName": "Space Cowboys",
-  "projectDescription": "A VR Prototype for the Vive Focus. Shooting gallery with a western theme.",
-  "projectLink": "/Projects/space-cowboys",
-  "projectImage": "/images/projects/SpaceCowboys.png",
-  "tags": ["VR", "Unity", "Prototype", "Shooter"]
-},
-{
-  "projectName": "Paw-Anormal Activity",
-  "projectDescription": "An award winning Global Game Jam entyr. In Paw-Anormal Activity players take on the role of a dog protecting their sleeping owner from “possessed” objects during a stormy night. Bark to defeat monsters but don’t bark too much or your owner will wake up.",
-  "projectLink": "/Projects/paw-anormal-activity",
-  "projectImage": "/images/projects/pawnormal.png",
-  "tags": ["Unreal 4", "Global Game Jam"]
-},
-{
-  "projectName": "Skadegamutc",
-  "projectDescription": "A 2D platformer focused on Native American Culture",
-  "projectLink": "/Projects/skadegamutc",
-  "projectImage": "/images/projects/Skadegamutc.png",
-    "tags": ["Game", "2D Platformer", "Unity"]
-},
-{
-  "projectName": "Wasteland",
-  "projectDescription": "Fully modeled, UVed, and textured scene made in Maya. Composited in Unreal 4",
-  "projectLink": "/Projects/wasteland",
-  "projectImage": "/images/projects/wasteland.png",
-  "tags": ["Art", "3D Modeling", "Texturing", "Unreal 4", "Maya"]
-},
-{
-  "projectName": "Procedural Planet",
-  "projectDescription": "A script made in Unreal 4 in Blueprint for a game focused on a ship rotating around the planet.",
-  "projectLink": "/Projects/procedural-planet",
-  "projectImage": "/images/projects/ProceduralPlanet.png"
-}]
+[
+    {
+        "projectName": "Personal Website",
+        "projectDescription": "My own website that I recently reworked using sveltekit and tailwindcss. It is hosted on Firebase.",
+        "projectLink": "/Projects/website",
+        "projectImage": "/images/website.png",
+        "tags": [
+            "Software Engineering",
+            "Frontend"
+        ]
+    },
+    {
+        "projectName": "Thief's Gambit",
+        "projectDescription": "Thief's Gambit is a Western-style VR shooter and puzzle game!",
+        "projectLink": "/Projects/thiefs-gambit",
+        "projectImage": "/images/projects/ThiefsGambit.png",
+        "tags": [
+            "VR",
+            "Unity",
+            "Full Game",
+            "Puzzle",
+            "Shooter"
+        ]
+    },
+    {
+        "projectName": "Space Cowboys",
+        "projectDescription": "A VR Prototype for the Vive Focus. Shooting gallery with a western theme.",
+        "projectLink": "/Projects/space-cowboys",
+        "projectImage": "/images/projects/SpaceCowboys.png",
+        "tags": [
+            "VR",
+            "Unity",
+            "Prototype",
+            "Shooter"
+        ]
+    },
+    {
+        "projectName": "Paw-Anormal Activity",
+        "projectDescription": "An award winning Global Game Jam entyr. In Paw-Anormal Activity players take on the role of a dog protecting their sleeping owner from “possessed” objects during a stormy night. Bark to defeat monsters but don’t bark too much or your owner will wake up.",
+        "projectLink": "/Projects/paw-anormal-activity",
+        "projectImage": "/images/projects/pawnormal.png",
+        "tags": [
+            "Unreal 4",
+            "Global Game Jam"
+        ]
+    },
+    {
+        "projectName": "Skadegamutc",
+        "projectDescription": "A 2D platformer focused on Native American Culture",
+        "projectLink": "/Projects/skadegamutc",
+        "projectImage": "/images/projects/Skadegamutc.png",
+        "tags": [
+            "Game",
+            "2D Platformer",
+            "Unity"
+        ]
+    },
+    {
+        "projectName": "Wasteland",
+        "projectDescription": "Fully modeled, UVed, and textured scene made in Maya. Composited in Unreal 4",
+        "projectLink": "/Projects/wasteland",
+        "projectImage": "/images/projects/wasteland.png",
+        "tags": [
+            "Art",
+            "3D Modeling",
+            "Texturing",
+            "Unreal 4",
+            "Maya"
+        ]
+    },
+    {
+        "projectName": "Procedural Planet",
+        "projectDescription": "A script made in Unreal 4 in Blueprint for a game focused on a ship rotating around the planet.",
+        "projectLink": "/Projects/procedural-planet",
+        "projectImage": "/images/projects/ProceduralPlanet.png"
+    }
+]

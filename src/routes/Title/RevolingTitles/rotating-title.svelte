@@ -3,7 +3,7 @@
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition';
 
-  const titles = ['Software Engineer', 'Devops Engineer', 'System Administrator', 'Cloud Engineer', "People Person"];
+  const titles = ['Software Engineer', 'Devops Engineer', 'System Administrator', 'Cloud Engineer', "Full Stack Developer", "People Person"];
 
   let index = $state(0);
 
